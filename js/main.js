@@ -17,6 +17,10 @@ $(".m_menuBtn").click(function () {
   $(".m_menuBtn .line3").toggleClass("close");
   $(".m_menuBtn .line4").toggleClass("close");
 });
+$(".reservation_container").click(function () {
+  $(".reservation_container2").toggleClass("on");
+  $("svg text").toggleClass("stroke");
+});
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 820) {
@@ -27,5 +31,3 @@ $(window).scroll(function () {
     $(".header").removeClass("linecolor");
   }
 });
-
-console.log($(window).scrollTop());
