@@ -1,0 +1,205 @@
+@charset "utf-8";
+body {
+  font-family: "Parisienne", cursive;
+}
+#header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  color: #272f41;
+}
+#header_wrap.scroll {
+  background-color: #272f41;
+  color: pink;
+}
+header {
+  margin: 0 0;
+  width: 150%;
+  height: 80px;
+}
+.linecolor {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 189, 190, 0.5);
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  top: 1vh;
+  left: calc(50% - 35px);
+}
+.logo a {
+  display: block;
+  color: inherit;
+  font-weight: normal;
+  font-size: 3rem;
+}
+.menu_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease-out;
+}
+.menu_container.on {
+  display: block;
+  transform: scaleX(1);
+}
+.global__container {
+}
+.reservation_container {
+}
+main {
+}
+.main_full {
+}
+
+section {
+}
+
+.main_visual {
+  width: 100%;
+  height: 100vh;
+}
+.main_visual video {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+.main_visual a {
+  position: absolute;
+  color: #272f41;
+  font-size: 7vw;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: -1;
+  top: 25vh;
+  left: 9vw;
+}
+.m_menuBtn {
+  position: absolute;
+  left: 3%;
+  top: 3vh;
+  width: 30px;
+  height: 40px;
+  transition: all 0.8s;
+}
+.m_menuBtn span {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(225, 82, 82, 0.96);
+  transition: all 0.8s;
+}
+.m_menuBtn .line1 {
+  width: 100%;
+}
+.m_menuBtn .line2 {
+  width: 85%;
+  top: 8px;
+}
+.m_menuBtn .line3 {
+  width: 100%;
+  top: 16px;
+}
+.m_menuBtn .line4 {
+  width: 60%;
+  top: 24px;
+}
+
+.m_menuBtn:hover span {
+  width: 100%;
+  background-color: #272f41;
+}
+.scroll {
+  background-color: #272f41 !important;
+}
+.close {
+  transform: rotate(270deg);
+  transform-origin: 50% center;
+  animation: xnaud 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.line1.close {
+  transform: translateY(16px) rotate(405deg);
+}
+.line2.close {
+  transform: rotate(-405deg) scale(0);
+}
+.line3.close {
+  transform: rotate(495deg);
+}
+.line4.close {
+  transform: rotate(-405deg) scale(0);
+}
+@keyframes xnaud {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.reservation_container:hover {
+  transform: rotate(-90deg) translateX(-20px);
+}
+
+.reservation_container {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 70px;
+  height: 2vw;
+  transition: all 0.8s;
+  transform: rotate(-90deg);
+}
+.reservation_container .line1 {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #272f41;
+}
+.reservation_container .line2 {
+  padding: 5px;
+  position: absolute;
+  top: -20px;
+  right: 75px;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #272f41;
+}
+
+.con1 {
+  display: block;
+}
+.con2 {
+  display: block;
+}
+
+.con1,
+.con2 {
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #000;
+}
